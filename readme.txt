@@ -1,5 +1,5 @@
 === forced-emoji ===
-Contributors:      WebDevStudios
+Contributors:      bradparbs
 Donate link:       http://brad.party
 Tags:
 Requires at least: 4.3
