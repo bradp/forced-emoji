@@ -1,16 +1,19 @@
 # forced-emoji #
-**Contributors:**      WebDevStudios  
-**Donate link:**       http://brad.party  
-**Tags:**  
-**Requires at least:** 4.3  
-**Tested up to:**      4.3  
-**Stable tag:**        0.1.0  
-**License:**           GPLv2  
-**License URI:**       http://www.gnu.org/licenses/gpl-2.0.html  
+**Contributors:**      bradparbs
+**Donate link:**       http://brad.party
+**Tags:**
+**Requires at least:** 4.3
+**Tested up to:**      4.3
+**Stable tag:**        0.1.0
+**License:**           GPLv2
+**License URI:**       http://www.gnu.org/licenses/gpl-2.0.html
 
 ## Description ##
 
 randomly forces emoji into your content
+
+todo:
+ [] document this ish, add some screenshots
 
 ## Installation ##
 
