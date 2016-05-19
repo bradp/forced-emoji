@@ -9,4 +9,3 @@ todo:
 * [ ] document this ish
 * [ ] add some screenshots
 * [ ] clean up emoji list
-## Description ##
