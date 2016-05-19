@@ -31,33 +31,6 @@
  */
 
 /**
- * Built using generator-plugin-wp
- */
-
-
-/**
- * Autoloads files with classes when needed
- *
- * @since  0.1.0
- * @param  string $class_name Name of the class being requested
- * @return void
- */
-function forced_emoji_autoload_classes( $class_name ) {
-	if ( 0 !== strpos( $class_name, 'F-_' ) ) {
-		return;
-	}
-
-	$filename = strtolower( str_replace(
-		'_', '-',
-		substr( $class_name, strlen( 'F-_' ) )
-	) );
-
-	Forced-emoji::include_file( $filename );
-}
-spl_autoload_register( 'forced_emoji_autoload_classes' );
-
-
-/**
  * Main initiation class
  *
  * @since  0.1.0
@@ -134,17 +107,6 @@ class ForcedEmoji {
 
 		$this->plugin_classes();
 	}
-
-	/**
-	 * Attach other plugin classes to the base plugin class.
-	 *
-	 * @since  0.1.0
-	 * @return void
-	 */
-	public function plugin_classes() {
-		// Attach other plugin classes to the base plugin class.
-		// $this->plugin_class = new F-_Plugin_Class( $this );
-	} // END OF PLUGIN CLASSES FUNCTION
 
 	/**
 	 * Add hooks and filters
@@ -556,7 +518,6 @@ class ForcedEmoji {
 			'⚽️',
 			'🏀',
 			'🏈',
-			'⚾️',
 			'🎾',
 			'🏉',
 			'🎱',
@@ -714,20 +675,13 @@ class ForcedEmoji {
 			'💰',
 			'💳',
 			'💎',
-			'⚖',
 			'🔧',
 			'🔨',
-			'⚒',
 			'🔩',
-			'⚙',
 			'🔫',
 			'💣',
 			'🔪',
-			'⚔',
 			'🚬',
-			'☠',
-			'⚰',
-			'⚱',
 			'🔮',
 			'💈',
 			'⚗',
@@ -791,7 +745,6 @@ class ForcedEmoji {
 			'📖',
 			'🔗',
 			'📎',
-			'✂️',
 			'📐',
 			'📏',
 			'📌',
@@ -801,7 +754,6 @@ class ForcedEmoji {
 			'🔒',
 			'🔓',
 			'🔏',
-			'✒️',
 			'📝',
 			'🔍',
 			'🔎',
@@ -819,14 +771,7 @@ class ForcedEmoji {
 			'💘',
 			'💝',
 			'💟',
-			'☮',
-			'✝️',
-			'☪',
-			'☸',
-			'✡️',
 			'🔯',
-			'☯️',
-			'☦',
 			'⛎',
 			'♈️',
 			'♉️',
@@ -841,25 +786,16 @@ class ForcedEmoji {
 			'♒️',
 			'♓️',
 			'🆔',
-			'⚛',
 			'🈳',
 			'🈹',
-			'☢',
-			'☣',
 			'📴',
 			'📳',
 			'🈶',
 			'🈚️',
 			'🈸',
 			'🈺',
-			'🈷️',
-			'✴️',
 			'🆚',
 			'🉑',
-			'💮',
-			'🉐',
-			'㊙️',
-			'㊗️',
 			'🈴',
 			'🈵',
 			'🈲',
@@ -886,8 +822,6 @@ class ForcedEmoji {
 			'❕',
 			'❓',
 			'❔',
-			'‼️',
-			'⁉️',
 			'💯',
 			'🔅',
 			'🔆',
@@ -933,13 +867,11 @@ class ForcedEmoji {
 			'🆓',
 			'🔟',
 			'🔢',
-			'▶️',
 			'⏩',
 			'⏪',
 			'🔀',
 			'🔁',
 			'🔂',
-			'◀️',
 			'🔼',
 			'🔽',
 			'⏫',
