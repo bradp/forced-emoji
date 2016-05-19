@@ -115,9 +115,6 @@ class ForcedEmoji {
 	 * @return void
 	 */
 	public function hooks() {
-		register_activation_hook( __FILE__, array( $this, '_activate' ) );
-		register_deactivation_hook( __FILE__, array( $this, '_deactivate' ) );
-
 		add_action( 'init', array( $this, 'init' ) );
 	}
 	/**
@@ -127,7 +124,6 @@ class ForcedEmoji {
 	 * @return void
 	 */
 	public function init() {
-		load_plugin_textdomain( 'forced-emoji', false, dirname( $this->basename ) . '/languages/' );
 
 		global $wp_filter;
 
