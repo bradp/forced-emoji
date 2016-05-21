@@ -104,8 +104,6 @@ class ForcedEmoji {
 		$this->basename = plugin_basename( __FILE__ );
 		$this->url      = plugin_dir_url( __FILE__ );
 		$this->path     = plugin_dir_path( __FILE__ );
-
-		$this->plugin_classes();
 	}
 
 	/**
@@ -986,10 +984,9 @@ class ForcedEmoji {
 			case 'path':
 				return $this->$field;
 			default:
-				throw new Exception( 'Invalid '. __CLASS__ .' property: ' . $field );
+				throw new Exception( 'Invalid ' . __CLASS__ . ' property: ' . $field );
 		}
 	}
-
 }
 
 /**
